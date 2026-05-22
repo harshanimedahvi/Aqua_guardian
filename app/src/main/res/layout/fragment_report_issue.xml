@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/aqua_bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tell Us Your Water Issue"
+        android:textSize="20sp"
+        android:textColor="@color/aqua_primary"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Issue Type:"/>
+    <EditText
+        android:id="@+id/etIssueType"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Dirty Water / No Supply / Leak"
+        android:background="@drawable/rounded_edittext"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Location:"/>
+    <EditText
+        android:id="@+id/etLocation"
+        android:layout_width="match_parent"
+        android:layout_height="35pt"
+        android:hint="Enter Location"
+        android:drawableLeft="@drawable/ic_location_pin"
+        android:background="@drawable/rounded_edittext"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Description:"/>
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="top"
+        android:hint="Provide detailed description..."
+        android:background="@drawable/rounded_edittext"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp"/>
+
+    <ImageButton
+        android:id="@+id/btnUploadPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="1.6in"
+        android:src="@drawable/ic_upload_cloud"
+        android:background="@color/white"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Submit"
+        android:backgroundTint="@color/aqua_primary"
+        android:textColor="@color/white"/>
+</LinearLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#E6F4F8">
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/topWave"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/bg_wave_top"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/smLogo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/aqua_logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topWave"
+            android:orientation="vertical"
+            android:paddingHorizontal="32dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign in"
+                android:textSize="24sp"
+                android:textColor="#0E4A6F"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:layout_marginTop="12dp"
+                android:textColor="#0E4A6F" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/bg_rounded_input"
+                android:inputType="textEmailAddress"
+                android:paddingHorizontal="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:layout_marginTop="12dp"
+                android:textColor="#0E4A6F" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/bg_rounded_input"
+                android:inputType="textPassword"
+                android:paddingHorizontal="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password"
+                android:layout_gravity="end"
+                android:layout_marginTop="4dp"
+                android:textColor="#3B7A94"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="160dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:background="@drawable/bg_rounded_button" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:text="Continue with Apple"
+                android:textAllCaps="false"
+                android:drawableLeft="@drawable/ic_apple"
+                android:paddingHorizontal="20dp"
+                android:background="@drawable/bg_social_button" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="8dp"
+                android:text="Continue with Google"
+                android:textAllCaps="false"
+                android:drawableLeft="@drawable/ic_google"
+                android:paddingHorizontal="20dp"
+                android:background="@drawable/bg_social_button" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="8dp"
+                android:text="Continue with Facebook"
+                android:textAllCaps="false"
+                android:drawableLeft="@drawable/ic_facebook"
+                android:paddingHorizontal="20dp"
+                android:background="@drawable/bg_social_button" />
+
+            <TextView
+                android:id="@+id/tvSignUpLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an Account? Sign up here"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="24dp"
+                android:textColor="#0E4A6F"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

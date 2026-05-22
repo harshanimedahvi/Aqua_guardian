@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/aqua_logo"/>
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="600dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="32dp">
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_warning_triangle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Are You Sure to Delete This Record"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="32dp"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnConfirmDelete"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:text="Delete"
+                android:textAllCaps="false"
+                android:backgroundTint="#DC3545"/>
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:text="Cancel"
+                android:textColor="#555555"
+                android:textAllCaps="false"
+                android:backgroundTint="#EAEAEA"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_wave_bottom" />
+</RelativeLayout>
