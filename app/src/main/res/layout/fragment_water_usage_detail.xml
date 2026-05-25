@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DBEEF4"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <ImageView
+            android:id="@+id/ivDetailLogo"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/aqua_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tvDetailTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Water Usage Details"
+            android:textColor="#2A2A2A"
+            android:textSize="24sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivDetailLogo" />
+
+        <ImageView
+            android:id="@+id/ivMeter"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/ic_water_tap_meter"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDetailTitle"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tvBreakdownLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Usage Breakdown :"
+            android:textColor="#2A2A2A"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivMeter" />
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:stretchColumns="0,1"
+            app:layout_constraintTop_toBottomOf="@+id/tvBreakdownLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TableRow>
+                <TextView
+                    android:background="@drawable/bg_table_header"
+                    android:padding="12dp"
+                    android:text="Type of need"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:textSize="15sp" />
+                <TextView
+                    android:background="@drawable/bg_table_header"
+                    android:padding="12dp"
+                    android:text="Quantity ( lpd )"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:background="@drawable/bg_table_cell"
+                    android:padding="10dp"
+                    android:text="Drinking"
+                    android:textColor="#1A1A1A" />
+                <TextView
+                    android:background="@drawable/bg_table_cell"
+                    android:padding="10dp"
+                    android:text="3"
+                    android:gravity="center"
+                    android:textColor="#1A1A1A" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:background="@drawable/bg_table_cell"
+                    android:padding="10dp"
+                    android:text="Cooking"
+                    android:textColor="#1A1A1A" />
+                <TextView
+                    android:background="@drawable/bg_table_cell"
+                    android:padding="10dp"
+                    android:text="5"
+                    android:gravity="center"
+                    android:textColor="#1A1A1A" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:background="@drawable/bg_table_cell"
+                    android:padding="10dp"
+                    android:text="Bathing"
+                    android:textColor="#1A1A1A" />
+                <TextView
+                    android:background="@drawable/bg_table_cell"
+                    android:padding="10dp"
+                    android:text="15"
+                    android:gravity="center"
+                    android:textColor="#1A1A1A" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:background="@drawable/bg_table_cell"
+                    android:padding="10dp"
+                    android:text="Washing utensils"
+                    android:textColor="#1A1A1A" />
+                <TextView
+                    android:background="@drawable/bg_table_cell"
+                    android:padding="10dp"
+                    android:text="7"
+                    android:gravity="center"
+                    android:textColor="#1A1A1A" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:background="@drawable/bg_table_cell"
+                    android:padding="10dp"
+                    android:text="House ablution"
+                    android:textColor="#1A1A1A" />
+                <TextView
+                    android:background="@drawable/bg_table_cell"
+                    android:padding="10dp"
+                    android:text="10"
+                    android:gravity="center"
+                    android:textColor="#1A1A1A" />
+            </TableRow>
+        </TableLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnEdit"
+            android:layout_width="140dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bg_custom_button"
+            android:text="Edit"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+            app:layout_constraintEnd_toStartOf="@+id/btnDelete"
+            app:layout_constraintHorizontal_chainStyle="spread" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDelete"
+            android:layout_width="140dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bg_delete_button"
+            android:text="Delete"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+            app:layout_constraintStart_toEndOf="@+id/btnEdit" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

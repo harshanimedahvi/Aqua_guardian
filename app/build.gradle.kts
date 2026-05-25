@@ -46,4 +46,7 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     implementation("androidx.navigation:navigation-fragment-ktx:2.8.0")
     implementation("androidx.navigation:navigation-ui-ktx:2.8.0")
+
+    // Pie Chart එක සඳහා අලුතින් එකතු කල කොටස මෙන්න:
+    implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
 }

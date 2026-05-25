@@ -8,5 +8,5 @@ data class WaterIssue(
     val location: String,
     val description: String,
     val status: String,
-    val imageResId: Int
+    val imageResId: Int,
 ) : Serializable

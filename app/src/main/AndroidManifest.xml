@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AquaGuardian">
         <activity
+            android:name=".fragment_update_success1"
+            android:exported="false" />
+        <activity
+            android:name=".fragment_delete_dialog1"
+            android:exported="false" />
+        <activity
+            android:name=".fragment_delete_success1"
+            android:exported="false" />
+        <activity
+            android:name=".fragment_add_water_usage"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

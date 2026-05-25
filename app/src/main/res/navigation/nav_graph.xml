@@ -52,6 +52,9 @@
         <action
             android:id="@+id/action_dashboardFragment_to_issueListFragment"
             app:destination="@id/issueListFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_addWaterUsageFragment"
+            app:destination="@id/addWaterUsageFragment" />
     </fragment>
 
     <fragment
@@ -126,4 +129,36 @@
             android:id="@+id/action_deleteSuccessFragment_to_issueListFragment"
             app:destination="@id/issueListFragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/addWaterUsageFragment"
+        android:name="com.example.aquaguardian.AddWaterUsageFragment"
+        android:label="Add Water Usage"
+        tools:layout="@layout/fragment_add_water_usage">
+        <action
+            android:id="@+id/action_addWaterUsageFragment_to_waterUsageDetailFragment"
+            app:destination="@id/waterUsageDetailFragment" />
+        <action
+            android:id="@+id/action_addWaterUsageFragment_to_waterUsageHistoryFragment"
+            app:destination="@id/waterUsageHistoryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/waterUsageDetailFragment"
+        android:name="com.example.aquaguardian.WaterUsageDetailFragment"
+        android:label="Water Usage Detail"
+        tools:layout="@layout/fragment_water_usage_detail">
+        <action
+            android:id="@+id/action_waterUsageDetailFragment_to_editIssueFragment"
+            app:destination="@id/editIssueFragment" />
+        <action
+            android:id="@+id/action_waterUsageDetailFragment_to_deleteWarningFragment"
+            app:destination="@id/deleteWarningFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/waterUsageHistoryFragment"
+        android:name="com.example.aquaguardian.WaterUsageHistoryFragment"
+        android:label="Water Usage History"
+        tools:layout="@layout/fragment_water_usage_history" />
 </navigation>

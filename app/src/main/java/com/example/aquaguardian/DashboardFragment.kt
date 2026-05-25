@@ -11,9 +11,14 @@ class DashboardFragment : Fragment(R.layout.fragment_dashboard) {
         super.onViewCreated(view, savedInstanceState)
 
         val btnReportIssue = view.findViewById<LinearLayout>(R.id.btnReportIssue)
+        val btnWaterUsage = view.findViewById<LinearLayout>(R.id.btnWaterUsage)
 
         btnReportIssue.setOnClickListener {
             findNavController().navigate(R.id.action_dashboardFragment_to_reportIssueFragment)
+        }
+
+        btnWaterUsage.setOnClickListener {
+            findNavController().navigate(R.id.action_dashboardFragment_to_addWaterUsageFragment)
         }
     }
 }
