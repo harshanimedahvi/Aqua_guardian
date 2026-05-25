@@ -39,6 +39,32 @@
         <action
             android:id="@+id/action_registerFragment_to_dashboardFragment"
             app:destination="@id/dashboardFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_createUserProfileFragment"
+            app:destination="@id/createUserProfileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/createUserProfileFragment"
+        android:name="com.example.aquaguardian.CreateUserProfileFragment"
+        android:label="Create Profile"
+        tools:layout="@layout/fragment_create_user_profile">
+        <action
+            android:id="@+id/action_createUserProfileFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+        <action
+            android:id="@+id/action_createUserProfileFragment_to_verifyEmailFragment"
+            app:destination="@id/verifyEmailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/verifyEmailFragment"
+        android:name="com.example.aquaguardian.VerifyEmailFragment"
+        android:label="Verify Email"
+        tools:layout="@layout/fragment_verify_email">
+        <action
+            android:id="@+id/action_verifyEmailFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
     </fragment>
 
     <fragment
@@ -55,6 +81,19 @@
         <action
             android:id="@+id/action_dashboardFragment_to_addWaterUsageFragment"
             app:destination="@id/addWaterUsageFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_userProfileFragment"
+            app:destination="@id/userProfileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.example.aquaguardian.UserProfileFragment"
+        android:label="User Profile"
+        tools:layout="@layout/fragment_user_profile">
+        <action
+            android:id="@+id/action_userProfileFragment_to_createUserProfileFragment"
+            app:destination="@id/createUserProfileFragment" />
     </fragment>
 
     <fragment

@@ -12,6 +12,7 @@ class DashboardFragment : Fragment(R.layout.fragment_dashboard) {
 
         val btnReportIssue = view.findViewById<LinearLayout>(R.id.btnReportIssue)
         val btnWaterUsage = view.findViewById<LinearLayout>(R.id.btnWaterUsage)
+        val btnProfile = view.findViewById<LinearLayout>(R.id.btnProfile)
 
         btnReportIssue.setOnClickListener {
             findNavController().navigate(R.id.action_dashboardFragment_to_reportIssueFragment)
@@ -19,6 +20,10 @@ class DashboardFragment : Fragment(R.layout.fragment_dashboard) {
 
         btnWaterUsage.setOnClickListener {
             findNavController().navigate(R.id.action_dashboardFragment_to_addWaterUsageFragment)
+        }
+
+        btnProfile.setOnClickListener {
+            findNavController().navigate(R.id.action_dashboardFragment_to_userProfileFragment)
         }
     }
 }
