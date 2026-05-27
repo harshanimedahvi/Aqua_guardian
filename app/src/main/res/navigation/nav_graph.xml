@@ -94,7 +94,26 @@
         <action
             android:id="@+id/action_userProfileFragment_to_createUserProfileFragment"
             app:destination="@id/createUserProfileFragment" />
+        <action
+            android:id="@+id/action_userProfileFragment_to_helpSupportFragment"
+            app:destination="@id/helpSupportFragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/helpSupportFragment"
+        android:name="com.example.aquaguardian.HelpSupportFragment"
+        android:label="Help &amp; Support"
+        tools:layout="@layout/fragment_help_support">
+        <action
+            android:id="@+id/action_helpSupportFragment_to_subscriptionPlansFragment"
+            app:destination="@id/subscriptionPlansFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/subscriptionPlansFragment"
+        android:name="com.example.aquaguardian.SubscriptionPlansFragment"
+        android:label="Subscription Plans"
+        tools:layout="@layout/fragment_subscription_plans" />
 
     <fragment
         android:id="@+id/reportIssueFragment"

@@ -23,7 +23,7 @@ class UserProfileFragment : Fragment(R.layout.fragment_user_profile) {
         }
 
         btnSettings.setOnClickListener {
-            Toast.makeText(context, "Settings Clicked", Toast.LENGTH_SHORT).show()
+            findNavController().navigate(R.id.action_userProfileFragment_to_helpSupportFragment)
         }
 
         btnEditProfile.setOnClickListener {
