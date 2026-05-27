@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -13,6 +14,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:src="@drawable/new_backarrow"
+        android:contentDescription="@null"
         app:tint="#0F1E80"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,6 +25,7 @@
         android:layout_height="110dp"
         android:layout_marginTop="16dp"
         android:src="@drawable/aqua_logo"
+        android:contentDescription="@null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -32,7 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:text="Water Quality Record"
+        android:text="@string/water_quality_record"
         android:textColor="#000000"
         android:textSize="26sp"
         android:textStyle="bold"
@@ -66,16 +69,18 @@
                     android:id="@+id/lblDate"
                     android:layout_width="110dp"
                     android:layout_height="wrap_content"
-                    android:text="Date"
+                    android:text="@string/date"
                     android:textColor="#000000"
                     android:textSize="20sp" />
 
                 <EditText
+                    tools:ignore="TouchTargetSizeCheck"
                     android:id="@+id/etDate"
                     android:layout_width="180dp"
                     android:layout_height="36dp"
                     android:background="#A2D7F2"
-                    android:hint="DD /MM / YYYY"
+                    android:hint="@string/dd_mm_yyyy"
+                    android:importantForAutofill="no"
                     android:textColorHint="#709CB4"
                     android:gravity="center"
                     android:inputType="date"
@@ -94,7 +99,7 @@
                     android:id="@+id/lblWaterColor"
                     android:layout_width="110dp"
                     android:layout_height="wrap_content"
-                    android:text="Water Color"
+                    android:text="@string/water_color"
                     android:textColor="#000000"
                     android:textSize="20sp"
                     android:layout_marginTop="2dp"/>
@@ -111,6 +116,7 @@
                         android:gravity="center"
                         android:layout_marginEnd="24dp">
                         <CheckBox
+                            tools:ignore="TouchTargetSizeCheck"
                             android:id="@+id/cbClear"
                             android:layout_width="35dp"
                             android:layout_height="35dp"
@@ -119,7 +125,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Clear"
+                            android:text="@string/clear"
                             android:textColor="#000000"
                             android:textSize="16sp"
                             android:layout_marginTop="4dp" />
@@ -131,6 +137,7 @@
                         android:orientation="vertical"
                         android:gravity="center">
                         <CheckBox
+                            tools:ignore="TouchTargetSizeCheck"
                             android:id="@+id/cbDirty"
                             android:layout_width="35dp"
                             android:layout_height="35dp"
@@ -139,7 +146,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Slightly Dirty"
+                            android:text="@string/slightly_dirty"
                             android:textColor="#000000"
                             android:textSize="16sp"
                             android:layout_marginTop="4dp" />
@@ -158,7 +165,7 @@
                     android:id="@+id/lblSmell"
                     android:layout_width="110dp"
                     android:layout_height="wrap_content"
-                    android:text="Smell"
+                    android:text="@string/smell"
                     android:textColor="#000000"
                     android:textSize="20sp"
                     android:layout_marginTop="2dp"/>
@@ -175,6 +182,7 @@
                         android:gravity="center"
                         android:layout_marginEnd="36dp">
                         <CheckBox
+                            tools:ignore="TouchTargetSizeCheck"
                             android:id="@+id/cbSmellYes"
                             android:layout_width="35dp"
                             android:layout_height="35dp"
@@ -183,7 +191,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Yes"
+                            android:text="@string/yes"
                             android:textColor="#000000"
                             android:textSize="16sp"
                             android:layout_marginTop="4dp" />
@@ -195,6 +203,7 @@
                         android:orientation="vertical"
                         android:gravity="center">
                         <CheckBox
+                            tools:ignore="TouchTargetSizeCheck"
                             android:id="@+id/cbSmellNo"
                             android:layout_width="35dp"
                             android:layout_height="35dp"
@@ -203,7 +212,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="No"
+                            android:text="@string/no"
                             android:textColor="#000000"
                             android:textSize="16sp"
                             android:layout_marginTop="4dp" />
@@ -222,16 +231,19 @@
                     android:id="@+id/lblNotes"
                     android:layout_width="110dp"
                     android:layout_height="wrap_content"
-                    android:text="Notes"
+                    android:text="@string/notes"
                     android:textColor="#000000"
                     android:textSize="20sp" />
 
                 <EditText
+                    android:hint="@string/enter_notes_here"
+                    tools:ignore="TouchTargetSizeCheck"
                     android:id="@+id/etNotes"
                     android:layout_width="210dp"
                     android:layout_height="75dp"
                     android:background="#A2D7F2"
                     android:gravity="top|start"
+                    android:importantForAutofill="no"
                     android:padding="8dp"
                     android:inputType="textMultiLine"
                     android:textColor="#000000"
@@ -251,6 +263,7 @@
             android:id="@+id/imgWave"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:importantForAccessibility="no"
             android:scaleType="fitXY"
             android:src="@drawable/water_wave" />
 
@@ -258,7 +271,7 @@
             android:id="@+id/btnSaveRecord"
             android:layout_width="210dp"
             android:layout_height="50dp"
-            android:text="Save Record"
+            android:text="@string/save_record"
             android:textColor="#000000"
             android:textSize="18sp"
             android:textStyle="bold"
