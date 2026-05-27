@@ -12,6 +12,39 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AquaGuardian">
         <activity
+            android:name=".ItemWaterHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditWaterQualityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SaveSuccessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WaterInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WaterQualityHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DeleteSuccessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DeleteConfirmActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SuccessActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".EditWaterQualityRecordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WaterDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WaterQualityRecordActivity"
+            android:exported="false" />
+        <activity
             android:name=".fragment_update_success1"
             android:exported="false" />
         <activity
