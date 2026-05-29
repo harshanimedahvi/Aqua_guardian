@@ -12,13 +12,13 @@ class WaterQualityRecord : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.water_quality_record)
+        setContentView(R.layout.activity_water_quality_record)
 
 
         val btnBack = findViewById<ImageView>(R.id.btnBack)
         val etDate = findViewById<EditText>(R.id.etDate)
         val cbClear = findViewById<CheckBox>(R.id.cbClear)
-        val cbSlightlyDirty = findViewById<CheckBox>(R.id.cbSlightlyDirty)
+        val cbDirty = findViewById<CheckBox>(R.id.cbDirty)
         val cbSmellYes = findViewById<CheckBox>(R.id.cbSmellYes)
         val cbSmellNo = findViewById<CheckBox>(R.id.cbSmellNo)
         val etNotes = findViewById<EditText>(R.id.etNotes)
@@ -31,9 +31,9 @@ class WaterQualityRecord : AppCompatActivity() {
 
 
         cbClear.setOnCheckedChangeListener { _, isChecked ->
-            if (isChecked) cbSlightlyDirty.isChecked = false
+            if (isChecked) cbDirty.isChecked = false
         }
-        cbSlightlyDirty.setOnCheckedChangeListener { _, isChecked ->
+        cbDirty.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked) cbClear.isChecked = false
         }
 
@@ -51,7 +51,7 @@ class WaterQualityRecord : AppCompatActivity() {
 
             val waterColor = when {
                 cbClear.isChecked -> "Clear"
-                cbSlightlyDirty.isChecked -> "Slightly Dirty"
+                cbDirty.isChecked -> "Slightly Dirty"
                 else -> "Not Selected"
             }
 

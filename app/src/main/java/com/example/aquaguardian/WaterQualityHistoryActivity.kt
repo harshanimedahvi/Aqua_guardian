@@ -1,5 +1,6 @@
 package com.example.aquaguardian
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
@@ -26,7 +27,16 @@ class WaterQualityHistoryActivity : AppCompatActivity() {
         )
 
 
-        val adapter = WaterHistoryAdapter(waterHistoryData)
+        val adapter = WaterHistoryAdapter(waterHistoryData) { record ->
+            // Navigate to Detail Activity
+            val intent = Intent(this, WaterDetailActivity::class.java)
+            intent.putExtra("DATE", record.date)
+            intent.putExtra("COLOR", record.color)
+            intent.putExtra("SMELL", record.smell)
+            intent.putExtra("NOTES", record.notes)
+            startActivity(intent)
+        }
+        
         rvWaterHistory.layoutManager = GridLayoutManager(this, 2)
         rvWaterHistory.adapter = adapter
 

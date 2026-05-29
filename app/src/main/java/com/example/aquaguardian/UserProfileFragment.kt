@@ -1,5 +1,6 @@
 package com.example.aquaguardian
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -17,6 +18,7 @@ class UserProfileFragment : Fragment(R.layout.fragment_user_profile) {
         val btnSettings = view.findViewById<ImageView>(R.id.btnSettings)
         val btnEditProfile = view.findViewById<Button>(R.id.btnEditProfile)
         val btnDeleteProfile = view.findViewById<Button>(R.id.btnDeleteProfile)
+        val btnViewQualityHistory = view.findViewById<Button>(R.id.btnViewQualityHistory)
 
         btnBack.setOnClickListener {
             findNavController().popBackStack()
@@ -32,6 +34,11 @@ class UserProfileFragment : Fragment(R.layout.fragment_user_profile) {
 
         btnDeleteProfile.setOnClickListener {
             Toast.makeText(context, "Delete Profile Clicked", Toast.LENGTH_SHORT).show()
+        }
+
+        btnViewQualityHistory.setOnClickListener {
+            val intent = Intent(requireContext(), WaterQualityHistoryActivity::class.java)
+            startActivity(intent)
         }
     }
 }

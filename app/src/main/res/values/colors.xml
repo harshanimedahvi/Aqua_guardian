@@ -7,4 +7,7 @@
     <color name="status_safe">#00E63D</color>
     <color name="status_warning">#FFEE00</color>
     <color name="status_danger">#E60000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="aqua_bg">#D6EFF8</color>
+    <color name="aqua_primary">#0F1E80</color>
 </resources>
