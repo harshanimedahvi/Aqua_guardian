@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="aqua_primary">#0E4A6F</color> <color name="aqua_secondary">#8CC8E3</color> <color name="aqua_bg">#E6F4F8</color> <color name="white">#FFFFFF</color>
-    <color name="red_delete">#D32F2F</color>
-    <color name="green_success">#4CAF50</color>
+    <color name="bg_light_blue">#D6EDF8</color>
+    <color name="card_blue">#79C3E4</color>
+    <color name="text_dark">#1A3644</color>
+
+    <color name="status_safe">#00E63D</color>
+    <color name="status_warning">#FFEE00</color>
+    <color name="status_danger">#E60000</color>
 </resources>
