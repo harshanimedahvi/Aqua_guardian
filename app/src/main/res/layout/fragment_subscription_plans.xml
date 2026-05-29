@@ -79,7 +79,7 @@
                 android:layout_height="160dp"
                 android:layout_marginBottom="24dp"
                 app:cardCornerRadius="20dp"
-                app:cardElevation="8dp">
+                app:cardElevation="5dp">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -93,7 +93,7 @@
                         android:background="@drawable/bg_price_tag_free"
                         android:paddingHorizontal="12dp"
                         android:paddingVertical="4dp"
-                        android:text="$ 0.99 / mo"
+                        android:text="$ 0.00 / mo"
                         android:textColor="#1A237E"
                         android:textSize="12sp"
                         android:textStyle="bold"
